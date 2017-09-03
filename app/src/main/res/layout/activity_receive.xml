@@ -17,22 +17,22 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/small_margin"
         android:gravity="center_horizontal"
         android:text="@string/qrcodetext"/>
 
 
     <LinearLayout
-        android:layout_width="294dp"
-        android:layout_height="294dp"
+        android:layout_width="@dimen/receive_ll_dimension"
+        android:layout_height="@dimen/receive_ll_dimension"
         android:background="#000000"
         android:gravity="center"
         android:layout_gravity="center">
 
     <ImageView
-        android:layout_width="290dp"
-        android:layout_height="290dp"
-       android:padding="1dp"
+        android:layout_width="@dimen/receive_img_dimension"
+        android:layout_height="@dimen/receive_img_dimension"
+       android:padding="@dimen/small_padding"
 
         android:background="#FFFFFF"
         android:layout_gravity="center"
@@ -43,7 +43,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/small_margin"
         android:gravity="center_horizontal"
         android:text="@string/etheriumaddresstext"/>
 
@@ -51,7 +51,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/very_small_margin"
         android:weightSum="10">
 
     <EditText

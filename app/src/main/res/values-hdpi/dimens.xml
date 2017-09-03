@@ -1,12 +1,45 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+<!-- updated enterpin-->
+    <dimen name="numeric_txt_size">25sp</dimen>
+    <dimen name="circle_img_height">40dp</dimen>
+    <dimen name="circle_img_margin">3dp</dimen>
+    <dimen name="circle_img_border_width">5dp</dimen>
+    <dimen name="enterpin_ll_height">70dp</dimen>
+
+    <!-- updated homeactivity-->
+    <dimen name="homeactivity_rl_margin">10dp</dimen>
+    <dimen name="view_height">200dp</dimen>
+    <dimen name="view_width">15dp</dimen>
+    <dimen name="etherium_value_size">35sp</dimen>
+
+
+
+    <!-- updated homeactivity-->
+    <dimen name="receive_ll_dimension">294dp</dimen>
+    <dimen name="receive_img_dimension">290dp</dimen>
+
+
+    <!-- common-->
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="very_small_margin">5dp</dimen>
+    <dimen name="large_margin">30dp</dimen>
+    <dimen name="normal_margin">20dp</dimen>
+    <dimen name="small_padding">1dp</dimen>
+    <dimen name="zero_value">0dp</dimen>
+    <dimen name="bottom_padding">2dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+
+
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="app_quote_txt_size">20sp</dimen>
     <dimen name="layouts_text_height">60dp</dimen>
     <dimen name="save_share_txt_size">15sp</dimen>
 
-    <dimen name="numeric_txt_size">25sp</dimen>
+
     
     <dimen name="margin_top_logo">150dp</dimen>
     <dimen name="margin_text_top_logo">20dp</dimen>

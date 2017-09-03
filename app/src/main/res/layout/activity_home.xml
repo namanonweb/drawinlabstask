@@ -13,13 +13,13 @@
 
   <RelativeLayout
       android:layout_width="match_parent"
-      android:layout_marginEnd="10dp"
+      android:layout_marginEnd="@dimen/homeactivity_rl_margin"
       android:layout_height="wrap_content">
 
 
 <View
-    android:layout_width="15dp"
-    android:layout_height="200dp"
+    android:layout_width="@dimen/view_width"
+    android:layout_height="@dimen/view_height"
     android:id="@+id/vw_space"/>
 
 <TextView
@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="9898989"
-        android:textSize="35sp"
+        android:textSize="@dimen/etherium_value_size"
         android:id="@+id/txt_ethiriumvalue"
         android:layout_below="@id/txt_ethiriumbalance"
         android:layout_alignParentRight="true"/>
@@ -133,7 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$456"
-        android:textSize="35sp"
+        android:textSize="@dimen/etherium_value_size"
         android:id="@+id/txt_ethiriumvaluedollar"
         android:layout_below="@id/txt_ethiriumvalue"
         android:layout_alignParentRight="true"/>
@@ -143,7 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$456"
-        android:textSize="35sp"
+        android:textSize="@dimen/etherium_value_size"
         android:id="@+id/txt_ethiriumvalueBTC"
         android:layout_marginTop="30dp"
         android:layout_below="@id/txt_ethiriumvaluedollar"
@@ -178,7 +178,7 @@
 
 
           android:id="@+id/txt_monthly_variant_value"
-          android:layout_marginTop="10dp"
+          android:layout_marginTop="@dimen/small_margin"
           android:layout_below="@id/txt_daily_variant_value"
           android:layout_alignParentRight="true"/>
 
@@ -260,9 +260,9 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_height="@dimen/normal_margin"
             android:text="09:00 AM"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/normal_margin"
             android:id="@+id/txt_time"
             android:layout_toRightOf="@id/txt_date"/>
 
@@ -270,9 +270,9 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_height="@dimen/normal_margin"
             android:text=".096767 ETH"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/normal_margin"
             android:id="@+id/txt_txnvalue"
             android:layout_below="@id/txt_date"/>
 
