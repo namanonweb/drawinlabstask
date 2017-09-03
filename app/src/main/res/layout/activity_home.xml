@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.naman.darwinlabstask.HomeActivity">
+
+  <include  layout="@layout/header"/>
+
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_marginEnd="10dp"
+      android:layout_height="wrap_content">
+
+
+<View
+    android:layout_width="15dp"
+    android:layout_height="200dp"
+    android:id="@+id/vw_space"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/vw_space"
+    android:text="@string/bitcoin"
+    android:id="@+id/txt_btc"/>
+
+
+
+<View
+    android:layout_width="30dp"
+    android:layout_height="15dp"
+    android:layout_toRightOf="@id/txt_btc"
+    android:layout_below="@+id/txt_eth"
+    android:id="@+id/img_btc_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vw_space"
+        android:layout_below="@id/txt_btc"
+        android:text="@string/etherium"
+        android:id="@+id/txt_eth"/>
+
+
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/txt_btc"
+        android:layout_below="@id/txt_eth"
+        android:id="@+id/img_eth_bar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vw_space"
+        android:text="@string/ltc"
+        android:layout_below="@id/txt_eth"
+        android:id="@+id/txt_ltc"/>
+
+
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/txt_ltc"
+
+        android:id="@+id/img_ltc_bar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vw_space"
+        android:layout_below="@id/txt_ltc"
+        android:text="@string/STM"
+        android:id="@+id/txt_stm"/>
+
+
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/txt_stm"
+        android:layout_below="@+id/txt_ltc"
+        android:id="@+id/img_stm_bar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vw_space"
+        android:layout_below="@id/txt_stm"
+        android:text="@string/dsh"
+        android:id="@+id/txt_dsh"/>
+
+
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/txt_dsh"
+        android:layout_below="@+id/txt_stm"
+        android:id="@+id/img_dsh_bar" />
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/etheriumbalance"
+    android:id="@+id/txt_ethiriumbalance"
+    android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9898989"
+        android:textSize="35sp"
+        android:id="@+id/txt_ethiriumvalue"
+        android:layout_below="@id/txt_ethiriumbalance"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$456"
+        android:textSize="35sp"
+        android:id="@+id/txt_ethiriumvaluedollar"
+        android:layout_below="@id/txt_ethiriumvalue"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$456"
+        android:textSize="35sp"
+        android:id="@+id/txt_ethiriumvalueBTC"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txt_ethiriumvaluedollar"
+        android:layout_alignParentRight="true"/>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+
+          android:id="@+id/txt_daily_variant_value"
+          android:layout_marginTop="10dp"
+          android:layout_below="@id/txt_ethiriumvalueBTC"
+          android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/day"
+
+        android:id="@+id/txt_daily_variant"
+
+        android:layout_below="@id/txt_ethiriumvalueBTC"
+       android:layout_toLeftOf="@+id/txt_daily_variant_value"/>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+
+          android:id="@+id/txt_monthly_variant_value"
+          android:layout_marginTop="10dp"
+          android:layout_below="@id/txt_daily_variant_value"
+          android:layout_alignParentRight="true"/>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/week"
+
+          android:id="@+id/txt_monthly_variant"
+
+          android:layout_below="@id/txt_daily_variant"
+          android:layout_toLeftOf="@+id/txt_monthly_variant_value"/>
+
+
+
+
+  </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_send"
+            android:layout_weight="1"
+            android:src="@drawable/sendicon"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_receive"
+            android:layout_weight="1"
+            android:src="@drawable/receiveicon"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_buy"
+            android:layout_weight="1"
+            android:src="@drawable/transfericon"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="TRANSACTION HISTORY"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@drawable/outgoing1"
+        android:id="@+id/img_sendIcon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="29th July"
+            android:id="@+id/txt_date"
+            android:layout_toRightOf="@id/img_sendIcon"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="09:00 AM"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/txt_time"
+            android:layout_toRightOf="@id/txt_date"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text=".096767 ETH"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/txt_txnvalue"
+            android:layout_below="@id/txt_date"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

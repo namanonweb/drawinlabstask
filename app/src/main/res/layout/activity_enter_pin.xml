@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.naman.darwinlabstask.EnterPinActivity">
+
+
+    <include  layout="@layout/header"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="70dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_logincode1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circleexact"
+        app:civ_border_color="#000000"
+        app:civ_border_width="5dp"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_logincode2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circleexact"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_logincode3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circleexact"
+
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/img_logincode4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circleexact"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+</LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:id="@+id/btn_1"
+            android:textSize="@dimen/numeric_txt_size"
+            android:text="1" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:textSize="@dimen/numeric_txt_size"
+            android:id="@+id/btn_2"
+            android:text="2" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:textSize="@dimen/numeric_txt_size"
+            android:id="@+id/btn_3"
+            android:text="3" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:textSize="@dimen/numeric_txt_size"
+            android:id="@+id/btn_4"
+            android:text="4" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:text="5"
+            android:textSize="@dimen/numeric_txt_size"
+            android:id="@+id/btn_5"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:id="@+id/btn_6"
+            android:textSize="@dimen/numeric_txt_size"
+            android:text="6" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:id="@+id/btn_7"
+            android:textSize="@dimen/numeric_txt_size"
+            android:text="7" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:text="8"
+            android:textSize="@dimen/numeric_txt_size"
+            android:id="@+id/btn_8"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:background="@color/colorWhite"
+            android:text="9"
+            android:textSize="@dimen/numeric_txt_size"
+            android:id="@+id/btn_9"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:background="@color/colorWhite"
+            android:text="0"
+            android:textSize="@dimen/numeric_txt_size"
+            android:id="@+id/btn_0"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:id="@+id/btn_backspace"
+            android:drawableLeft="@drawable/backspace"
+            android:paddingLeft="50dp"
+            android:textSize="@dimen/numeric_txt_size"
+            android:icon="@drawable/backspace"
+            android:background="@color/colorWhite"
+          />
+
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            android:text="."
+            android:textSize="@dimen/numeric_txt_size"
+            android:id="@+id/btn_dot"
+            android:background="@color/colorWhite"
+
+             />
+    </GridLayout>
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/forwardchevron"
+        android:id="@+id/img_forward"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DarwinLabsTask</string>
+    <string name="home_title">Ledger</string>
+    <string name="receive_title">RECEIVE</string>
+    <string name="send2_title">SEND</string>
+    <string name="enter_pin">ENTER PIN</string>
+
+    <string name="bitcoin">BTC</string>
+    <string name="etherium">ETHERIUM</string>
+    <string name="ltc">LTC</string>
+    <string name="STM">STM</string>
+    <string name="dsh">DSH</string>
+
+    <string name="etheriumbalance">ETHERIUM BALANCE</string>
+    <string name="etheriumvalue">1 ETH</string>
+    <string name="day">DAY</string>
+    <string name="week">WEEK</string>
+
+    <string name="qrcodetext">YOUR ETHERIUM QR CODE</string>
+    <string name="etheriumaddresstext">YOUR ETHERIUM ADDRESS</string>
+
+    
+
+</resources>
