@@ -7,16 +7,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ReceiveActivity extends AppCompatActivity implements View.OnClickListener{
+public class ReceiveActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView mTitle ;
+    private TextView mTitle;
     private ImageView mIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receive);
-
 
 
         getUi();
@@ -32,25 +31,21 @@ public class ReceiveActivity extends AppCompatActivity implements View.OnClickLi
     }
 
 
+    public void getUi() {
 
-    public void getUi(){
-
-        mTitle = (TextView)findViewById(R.id.txt_title);
-        mIcon = (ImageView)findViewById(R.id.img_back_menu);
+        mTitle = (TextView) findViewById(R.id.txt_title);
+        mIcon = (ImageView) findViewById(R.id.img_back_menu);
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId())
-        {
+        switch (view.getId()) {
 
 
+            case R.id.img_back_menu:
 
-            case R.id.img_back_menu :
-
-              finish();
-                break ;
-
+                finish();
+                break;
 
 
         }

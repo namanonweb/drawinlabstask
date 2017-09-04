@@ -15,31 +15,30 @@ import org.w3c.dom.Text;
 public class Send2Activity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private TextView mTitle ;
+    private TextView mTitle;
     private ImageView mIcon;
 
-    private ImageView mForward ;
+    private ImageView mForward;
     private EditText mAmount;
 
 
+    private Button mButton1;
+    private Button mButton2;
+    private Button mButton3;
+    private Button mButton4;
+    private Button mButton5;
+    private Button mButton6;
+    private Button mButton7;
+    private Button mButton8;
+    private Button mButton9;
+    private Button mButton0;
+    private Button mButtonBackspace;
+    private Button mButtonDot;
 
-    private Button mButton1 ;
-    private Button mButton2 ;
-    private Button mButton3 ;
-    private Button mButton4 ;
-    private Button mButton5 ;
-    private Button mButton6 ;
-    private Button mButton7 ;
-    private Button mButton8 ;
-    private Button mButton9 ;
-    private Button mButton0 ;
-    private Button mButtonBackspace ;
-    private Button mButtonDot ;
 
+    private TextView mEthValue;
 
-    private TextView mEthValue ;
-
-    private String ethvalue  ="";
+    private String ethvalue = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,118 +76,113 @@ public class Send2Activity extends AppCompatActivity implements View.OnClickList
     }
 
 
+    public void getUi() {
 
-    public void getUi(){
-
-        mTitle = (TextView)findViewById(R.id.txt_title);
-        mIcon = (ImageView)findViewById(R.id.img_back_menu);
-        mForward = (ImageView)findViewById(R.id.img_forward);
-        mButton0 = (Button)findViewById(R.id.btn_0);
-        mButton1 = (Button)findViewById(R.id.btn_1);
-        mButton2 = (Button)findViewById(R.id.btn_2);
-        mButton3 = (Button)findViewById(R.id.btn_3);
-        mButton4 = (Button)findViewById(R.id.btn_4);
-        mButton5 = (Button)findViewById(R.id.btn_5);
-        mButton6 = (Button)findViewById(R.id.btn_6);
-        mButton7 = (Button)findViewById(R.id.btn_7);
-        mButton8 = (Button)findViewById(R.id.btn_8);;
-        mButton9 = (Button)findViewById(R.id.btn_9);
-        mButtonDot = (Button)findViewById(R.id.btn_dot);
-        mButtonBackspace = (Button)findViewById(R.id.btn_backspace);
-        mEthValue= (TextView) findViewById(R.id.txt_ethvalue);
+        mTitle = (TextView) findViewById(R.id.txt_title);
+        mIcon = (ImageView) findViewById(R.id.img_back_menu);
+        mForward = (ImageView) findViewById(R.id.img_forward);
+        mButton0 = (Button) findViewById(R.id.btn_0);
+        mButton1 = (Button) findViewById(R.id.btn_1);
+        mButton2 = (Button) findViewById(R.id.btn_2);
+        mButton3 = (Button) findViewById(R.id.btn_3);
+        mButton4 = (Button) findViewById(R.id.btn_4);
+        mButton5 = (Button) findViewById(R.id.btn_5);
+        mButton6 = (Button) findViewById(R.id.btn_6);
+        mButton7 = (Button) findViewById(R.id.btn_7);
+        mButton8 = (Button) findViewById(R.id.btn_8);
+        ;
+        mButton9 = (Button) findViewById(R.id.btn_9);
+        mButtonDot = (Button) findViewById(R.id.btn_dot);
+        mButtonBackspace = (Button) findViewById(R.id.btn_backspace);
+        mEthValue = (TextView) findViewById(R.id.txt_ethvalue);
     }
 
     @Override
     public void onClick(View view) {
 
-        switch (view.getId()){
+        switch (view.getId()) {
 
-            case R.id.img_forward :
+            case R.id.img_forward:
 
 
-                break ;
+                break;
 
-            case R.id.img_back_menu :
+            case R.id.img_back_menu:
 
-              //onBackPressed();
+                //onBackPressed();
 
                 finish();
-                break ;
+                break;
 
 
-            case (R.id.btn_0) :
+            case (R.id.btn_0):
 
-                ethvalue = ethvalue+ "0";
-              //  mEthValue.setText("");
-             //   mEthValue.setText("1"+ethvalue);
-                break ;
+                ethvalue = ethvalue + "0";
+                //  mEthValue.setText("");
+                //   mEthValue.setText("1"+ethvalue);
+                break;
 
-            case (R.id.btn_1) :
-                ethvalue =  ethvalue+"1";
-
-
-
-                break ;
-
-            case (R.id.btn_2) :
-                ethvalue = ethvalue+ "2";
-                break ;
-
-            case (R.id.btn_3) :
-                ethvalue =  ethvalue+"3";
-                break ;
-
-            case (R.id.btn_4) :
-                ethvalue =  ethvalue+"4" ;
-                break ;
-
-            case (R.id.btn_5) :
-                ethvalue =  ethvalue+"5";
-                break ;
-
-            case (R.id.btn_6) :
-
-                ethvalue =  ethvalue+"6" ;
-                break ;
-
-            case (R.id.btn_7) :
-                ethvalue =  ethvalue+"7" ;
-
-                break ;
-
-            case (R.id.btn_8) :
-                ethvalue =  ethvalue+"8" ;
-                break ;
-
-            case (R.id.btn_9) :
-
-                ethvalue =  ethvalue+"2" ;
-                break ;
-
-            case (R.id.btn_dot) :
-                ethvalue =  ethvalue+"." ;
+            case (R.id.btn_1):
+                ethvalue = ethvalue + "1";
 
 
+                break;
 
-                break ;
+            case (R.id.btn_2):
+                ethvalue = ethvalue + "2";
+                break;
 
-            case (R.id.btn_backspace) :
-               //ethvalue.toString().charAt(ethvalue.length()-1).
+            case (R.id.btn_3):
+                ethvalue = ethvalue + "3";
+                break;
+
+            case (R.id.btn_4):
+                ethvalue = ethvalue + "4";
+                break;
+
+            case (R.id.btn_5):
+                ethvalue = ethvalue + "5";
+                break;
+
+            case (R.id.btn_6):
+
+                ethvalue = ethvalue + "6";
+                break;
+
+            case (R.id.btn_7):
+                ethvalue = ethvalue + "7";
+
+                break;
+
+            case (R.id.btn_8):
+                ethvalue = ethvalue + "8";
+                break;
+
+            case (R.id.btn_9):
+
+                ethvalue = ethvalue + "2";
+                break;
+
+            case (R.id.btn_dot):
+                ethvalue = ethvalue + ".";
+
+
+                break;
+
+            case (R.id.btn_backspace):
+                //ethvalue.toString().charAt(ethvalue.length()-1).
                 //if
                 try {
                     ethvalue = ethvalue.substring(0, ethvalue.length() - 1)/*+"ETH"*/;
 
-                }
-                catch (StringIndexOutOfBoundsException ar)
-                {
+                } catch (StringIndexOutOfBoundsException ar) {
                     ar.printStackTrace();
                 }
-                break ;
-
+                break;
 
 
         }
-        mEthValue.setText(ethvalue+" ETH");
+        mEthValue.setText(ethvalue + " ETH");
 
     }
 }

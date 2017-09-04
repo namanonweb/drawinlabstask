@@ -10,26 +10,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private TextView mTitle ;
-    private TextView mTitleCont ;
+    private TextView mTitle;
+    private TextView mTitleCont;
     private ImageView mIcon;
 
-    private ImageView mSend ;
-    private ImageView mReceive ;
-    private ImageView mBuySell ;
-
-
+    private ImageView mSend;
+    private ImageView mReceive;
+    private ImageView mBuySell;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-
 
 
         getUi();
@@ -54,15 +50,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    public void getUi(){
+    public void getUi() {
 
-        mTitle = (TextView)findViewById(R.id.txt_title);
-        mIcon = (ImageView)findViewById(R.id.img_back_menu);
-        mTitleCont = (TextView)findViewById(R.id.txt_title_cont);
+        mTitle = (TextView) findViewById(R.id.txt_title);
+        mIcon = (ImageView) findViewById(R.id.img_back_menu);
+        mTitleCont = (TextView) findViewById(R.id.txt_title_cont);
 
-        mSend = (ImageView)findViewById(R.id.img_send);
-        mReceive = (ImageView)findViewById(R.id.img_receive);
-        mBuySell = (ImageView)findViewById(R.id.img_buy);
+        mSend = (ImageView) findViewById(R.id.img_send);
+        mReceive = (ImageView) findViewById(R.id.img_receive);
+        mBuySell = (ImageView) findViewById(R.id.img_buy);
 
 
     }
@@ -70,38 +66,35 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-     switch (view.getId())
-     {
+        switch (view.getId()) {
 
-         case (R.id.img_send) :
-             Intent i = new Intent(HomeActivity.this,Send2Activity.class);
-             startActivity(i);
+            case (R.id.img_send):
+                Intent i = new Intent(HomeActivity.this, Send2Activity.class);
+                startActivity(i);
 
-             break ;
+                break;
 
-         case (R.id.img_receive):
+            case (R.id.img_receive):
 
-             Intent i2 = new Intent(HomeActivity.this,ReceiveActivity.class);
-             startActivity(i2);
+                Intent i2 = new Intent(HomeActivity.this, ReceiveActivity.class);
+                startActivity(i2);
 
-             break ;
+                break;
 
-         case R.id.img_back_menu :
-             Toast.makeText(HomeActivity.this,"in progress",Toast.LENGTH_SHORT).show();
+            case R.id.img_back_menu:
+                Toast.makeText(HomeActivity.this, "in progress", Toast.LENGTH_SHORT).show();
 
-             //onBackPressed();
-             break ;
+                //onBackPressed();
+                break;
 
-         case (R.id.img_buy):
+            case (R.id.img_buy):
 
-             Toast.makeText(HomeActivity.this,"in progress",Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomeActivity.this, "in progress", Toast.LENGTH_SHORT).show();
 
-             break ;
-
+                break;
 
 
-
-     }
+        }
 
 
     }
@@ -111,8 +104,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-               //  onBackPressed();
-               finish();
+                //  onBackPressed();
+                finish();
 
         }
        /* mTextView.setText(item.getTitle());*/
