@@ -48,7 +48,7 @@ public class ReceiveActivity extends AppCompatActivity implements View.OnClickLi
 
             case R.id.img_back_menu :
 
-                startActivity(new Intent(ReceiveActivity.this,HomeActivity.class));
+              finish();
                 break ;
 
 

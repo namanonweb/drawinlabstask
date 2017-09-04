@@ -128,6 +128,10 @@ public class EnterPinActivity extends AppCompatActivity implements View.OnClickL
                     Intent i = new Intent(EnterPinActivity.this,HomeActivity.class);
                     startActivity(i);
                 }
+                else {
+
+                    Toast.makeText(EnterPinActivity.this,"Need to enter 4 digit Passcode ",Toast.LENGTH_SHORT).show();
+                }
 
                 break;
 
@@ -207,6 +211,12 @@ public class EnterPinActivity extends AppCompatActivity implements View.OnClickL
 
             case (R.id.btn_dot) :
 
+
+                if (count!=4) {
+                    check();
+                    changeVisibility();
+                }
+
                 break ;
 
             case (R.id.btn_backspace) :
@@ -232,7 +242,7 @@ public class EnterPinActivity extends AppCompatActivity implements View.OnClickL
         }
         else {
 
-            Toast.makeText(EnterPinActivity.this,"4 only",Toast.LENGTH_SHORT).show();
+            Toast.makeText(EnterPinActivity.this,"Only 4 digits can be entered",Toast.LENGTH_SHORT).show();
         }
         Log.v("textcheck",count+"") ;
 

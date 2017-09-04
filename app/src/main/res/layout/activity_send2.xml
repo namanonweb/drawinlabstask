@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,152 +10,187 @@
     android:orientation="vertical"
     tools:context="com.naman.darwinlabstask.EnterPinActivity">
 
-
-    <include  layout="@layout/header"/>
-<android.support.v7.widget.CardView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-
-    android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="@dimen/zero_value"
-    android:layout_marginTop="@dimen/zero_value"
-    android:clipToPadding="true"
-    app:contentPaddingBottom="@dimen/bottom_padding"
-    app:cardElevation="@dimen/card_elevation">
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-
-        android:gravity="top"
-        android:background="@null"
-        android:lines="5"
-        android:layout_marginLeft="10dip"
-        android:layout_marginRight="10dip" />
-
-
-</android.support.v7.widget.CardView>
-
-
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/large_margin"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="center"
-        android:columnCount="3"
-        android:orientation="horizontal"
-        android:weightSum="3">
+        android:layout_height="match_parent"
 
-        <Button
-            android:layout_columnWeight="1"
-            android:background="@color/colorWhite"
-            android:id="@+id/btn_1"
-            android:textSize="@dimen/numeric_txt_size"
-            android:text="1" />
-
-        <Button
-            android:layout_columnWeight="1"
-            android:background="@color/colorWhite"
-            android:textSize="@dimen/numeric_txt_size"
-            android:id="@+id/btn_2"
-            android:text="2" />
-
-        <Button
-            android:layout_columnWeight="1"
-            android:textSize="@dimen/numeric_txt_size"
-            android:background="@color/colorWhite"
-            android:id="@+id/btn_3"
-
-            android:text="3" />
-
-        <Button
-            android:layout_columnWeight="1"
-            android:background="@color/colorWhite"
-            android:id="@+id/btn_4"
-            android:textSize="@dimen/numeric_txt_size"
-            android:text="4" />
+        android:orientation="vertical"
+        tools:context="com.naman.darwinlabstask.EnterPinActivity">
 
 
-        <Button
-            android:layout_columnWeight="1"
-            android:background="@color/colorWhite"
-            android:text="5"
-            android:textSize="@dimen/numeric_txt_size"
-            android:id="@+id/btn_5"/>
-
-        <Button
-            android:layout_columnWeight="1"
-            android:background="@color/colorWhite"
-            android:id="@+id/btn_6"
-            android:textSize="@dimen/numeric_txt_size"
-            android:text="6" />
-
-        <Button
-            android:layout_columnWeight="1"
-            android:background="@color/colorWhite"
-            android:id="@+id/btn_7"
-            android:textSize="@dimen/numeric_txt_size"
-            android:text="7" />
-
-        <Button
-            android:layout_columnWeight="1"
-            android:background="@color/colorWhite"
-            android:text="8"
-            android:textSize="@dimen/numeric_txt_size"
-            android:id="@+id/btn_8"/>
-
-        <Button
-            android:layout_columnWeight="1"
-            android:background="@color/colorWhite"
-            android:text="9"
-            android:textSize="@dimen/numeric_txt_size"
-            android:id="@+id/btn_9"/>
-
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_column="1"
-            android:textSize="@dimen/numeric_txt_size"
-            android:background="@color/colorWhite"
-            android:text="0"
-            android:id="@+id/btn_0"/>
-
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_column="0"
-            android:textSize="@dimen/numeric_txt_size"
-            android:drawableLeft="@drawable/backspace"
-            android:paddingLeft="50dp"
-            android:id="@+id/btn_backspace"
-            android:src="@drawable/backspace"
-            android:background="@color/colorWhite"/>
+        <include layout="@layout/header" />
 
 
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_column="2"
-            android:text="."
-            android:textSize="@dimen/numeric_txt_size"
-            android:id="@+id/btn_dot"
-            android:background="@color/colorWhite"
-
-            />
-    </GridLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
 
+            >
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/normal_margin"
+                android:text="@string/amount"
+                android:textSize="@dimen/etherium_value_dollar"
+                android:textColor="@color/colorGrey"
+                android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:src="@drawable/forwardchevron"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/large_margin"
-        android:id="@+id/img_forward"
-        android:layout_height="wrap_content" />
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/txt_ethvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/normal_margin"
+                android:textSize="@dimen/etherium_value_dollar"
+                android:text="@string/eth" />
+
+
+            <TextView
+                android:id="@+id/txt_ethvaluedollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/txt_ethvalue"
+                android:layout_margin="@dimen/normal_margin"
+                android:text="@string/usd"
+                android:textSize="@dimen/txt_etherium_value_btc"
+                android:textColor="@color/colorGrey" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/dropshadow" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/normal_margin"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="1"
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="2"
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_3"
+
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="3"
+
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="4"
+                android:textSize="@dimen/numeric_txt_size" />
+
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="5"
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="6"
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="7"
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="8"
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="9"
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="0"
+                android:textSize="@dimen/numeric_txt_size" />
+
+            <Button
+                android:id="@+id/btn_backspace"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/backspace"
+                android:paddingLeft="@dimen/large_margin"
+                android:src="@drawable/backspace"
+                android:textSize="@dimen/numeric_txt_size" />
+
+
+            <Button
+                android:id="@+id/btn_dot"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:background="@color/colorWhite"
+                android:text="."
+                android:textSize="@dimen/numeric_txt_size"
+
+                />
+        </GridLayout>
+
+
+        <ImageView
+            android:id="@+id/img_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/very_small_margin"
+            android:src="@drawable/forwardchevron" />
+
+    </LinearLayout>
+</ScrollView>

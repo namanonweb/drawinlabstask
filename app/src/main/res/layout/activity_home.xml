@@ -1,31 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.naman.darwinlabstask.HomeActivity">
+    tools:context="com.naman.darwinlabstask.HomeActivity"
 
+    >
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    >
   <include  layout="@layout/header"/>
 
 
 
   <RelativeLayout
       android:layout_width="match_parent"
-      android:layout_marginEnd="@dimen/homeactivity_rl_margin"
+      android:layout_marginRight="@dimen/homeactivity_rl_margin"
       android:layout_height="wrap_content">
 
 
 <View
     android:layout_width="@dimen/view_width"
     android:layout_height="@dimen/view_height"
+    android:background="@color/colorBlue"
+    android:layout_marginRight="@dimen/small_margin"
     android:id="@+id/vw_space"/>
 
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_toRightOf="@id/vw_space"
+    android:layout_margin="@dimen/small_margin"
     android:text="@string/bitcoin"
     android:id="@+id/txt_btc"/>
 
@@ -33,9 +43,12 @@
 
 <View
     android:layout_width="30dp"
-    android:layout_height="15dp"
+    android:layout_height="5dp"
+
+    android:layout_marginTop="@dimen/view_width"
+    android:background="@color/colorGrey"
     android:layout_toRightOf="@id/txt_btc"
-    android:layout_below="@+id/txt_eth"
+
     android:id="@+id/img_btc_bar" />
 
     <TextView
@@ -44,15 +57,20 @@
         android:layout_toRightOf="@id/vw_space"
         android:layout_below="@id/txt_btc"
         android:text="@string/etherium"
+        android:layout_margin="@dimen/small_margin"
         android:id="@+id/txt_eth"/>
 
 
 
     <View
         android:layout_width="30dp"
-        android:layout_height="15dp"
-        android:layout_toRightOf="@id/txt_btc"
-        android:layout_below="@id/txt_eth"
+        android:layout_height="5dp"
+        android:layout_marginTop="@dimen/view_width"
+        android:background="@color/colorBlue"
+
+
+        android:layout_toRightOf="@id/txt_eth"
+        android:layout_below="@id/txt_btc"
         android:id="@+id/img_eth_bar" />
 
 
@@ -61,17 +79,19 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/vw_space"
         android:text="@string/ltc"
+        android:layout_margin="@dimen/small_margin"
         android:layout_below="@id/txt_eth"
         android:id="@+id/txt_ltc"/>
 
 
 
-    <View
+ <!--   <View
         android:layout_width="30dp"
-        android:layout_height="15dp"
+        android:layout_height="5dp"
         android:layout_toRightOf="@id/txt_ltc"
-
-        android:id="@+id/img_ltc_bar" />
+        android:layout_marginTop="15dp"
+        android:background="@color/colorGrey"
+        android:id="@+id/img_ltc_bar" />-->
 
 
     <TextView
@@ -80,6 +100,7 @@
         android:layout_toRightOf="@id/vw_space"
         android:layout_below="@id/txt_ltc"
         android:text="@string/STM"
+        android:layout_margin="@dimen/small_margin"
         android:id="@+id/txt_stm"/>
 
 
@@ -97,6 +118,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/vw_space"
         android:layout_below="@id/txt_stm"
+        android:layout_margin="@dimen/small_margin"
         android:text="@string/dsh"
         android:id="@+id/txt_dsh"/>
 
@@ -119,12 +141,22 @@
     android:layout_alignParentRight="true"/>
 
 
+      <View
+          android:layout_width="100dp"
+          android:layout_height="@dimen/circle_img_margin"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="@dimen/small_dimen"
+          android:layout_below="@id/txt_ethiriumbalance"
+          android:background="@color/colorGrey"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="9898989"
+        android:layout_marginTop="@dimen/large_margin"
         android:textSize="@dimen/etherium_value_size"
         android:id="@+id/txt_ethiriumvalue"
+        android:textColor="@color/colorBlue"
         android:layout_below="@id/txt_ethiriumbalance"
         android:layout_alignParentRight="true"/>
 
@@ -132,8 +164,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$456"
-        android:textSize="@dimen/etherium_value_size"
+        android:text="@string/etheriumdollar"
+        android:textSize="@dimen/etherium_value_dollar"
         android:id="@+id/txt_ethiriumvaluedollar"
         android:layout_below="@id/txt_ethiriumvalue"
         android:layout_alignParentRight="true"/>
@@ -142,8 +174,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$456"
-        android:textSize="@dimen/etherium_value_size"
+        android:text="@string/etheriumbtc"
+        android:textSize="@dimen/txt_etherium_value_btc"
         android:id="@+id/txt_ethiriumvalueBTC"
         android:layout_marginTop="30dp"
         android:layout_below="@id/txt_ethiriumvaluedollar"
@@ -154,9 +186,9 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
 
-
+          android:text="@string/weeklyvariantvalue"
           android:id="@+id/txt_daily_variant_value"
-          android:layout_marginTop="10dp"
+
           android:layout_below="@id/txt_ethiriumvalueBTC"
           android:layout_alignParentRight="true"/>
 
@@ -175,10 +207,10 @@
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-
+          android:text="@string/dailyvariantvalue"
 
           android:id="@+id/txt_monthly_variant_value"
-          android:layout_marginTop="@dimen/small_margin"
+
           android:layout_below="@id/txt_daily_variant_value"
           android:layout_alignParentRight="true"/>
 
@@ -202,16 +234,45 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
         android:weightSum="3"
         >
 
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/img_send"
-            android:layout_weight="1"
+
             android:src="@drawable/sendicon"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:text="@string/send2_title"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
 
         <ImageView
@@ -221,6 +282,23 @@
             android:layout_weight="1"
             android:src="@drawable/receiveicon"/>
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:text="@string/receive_title"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -228,25 +306,49 @@
             android:layout_weight="1"
             android:src="@drawable/transfericon"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="@dimen/small_margin"
+                android:text="@string/buysell"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/dropshadow"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/small_margin"
         android:gravity="center"
         android:text="TRANSACTION HISTORY"/>
+
+    <View
+        android:layout_width="@dimen/view_height"
+        android:layout_height="@dimen/circle_img_margin"
+        android:layout_gravity="center"
+
+        android:layout_below="@id/txt_ethiriumbalance"
+        android:background="@color/colorGrey"/>
+
+
 
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_margin="@dimen/small_margin"
         android:layout_height="wrap_content">
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/very_small_margin"
         android:src="@drawable/outgoing1"
         android:id="@+id/img_sendIcon"/>
 
@@ -255,6 +357,7 @@
             android:layout_height="20dp"
             android:text="29th July"
             android:id="@+id/txt_date"
+            android:layout_marginLeft="@dimen/small_margin"
             android:layout_toRightOf="@id/img_sendIcon"/>
 
 
@@ -272,7 +375,8 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/normal_margin"
             android:text=".096767 ETH"
-            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@id/img_sendIcon"
             android:id="@+id/txt_txnvalue"
             android:layout_below="@id/txt_date"/>
 
@@ -283,3 +387,4 @@
 
 
 </LinearLayout>
+</ScrollView>

@@ -2,6 +2,7 @@
     <string name="app_name">DarwinLabsTask</string>
     <string name="home_title">Ledger</string>
     <string name="receive_title">RECEIVE</string>
+    <string name="buysell">BUY/SELL</string>
     <string name="send2_title">SEND</string>
     <string name="enter_pin">ENTER PIN</string>
 
@@ -19,6 +20,17 @@
     <string name="qrcodetext">YOUR ETHERIUM QR CODE</string>
     <string name="etheriumaddresstext">YOUR ETHERIUM ADDRESS</string>
 
-    
+     <string name="etheriumdollar">$5678</string>
+    <string name="etheriumbtc">1 ETH = 0.097 BTC</string>
+    <string name="dailyvariantvalue">0.98%</string>
+    <string name="weeklyvariantvalue">0.78%</string>
+
+    <string name="ex">EX</string>
+    <string name="amount">AMOUNT</string>
+    <string name="eth">0.0 ETH</string>
+    <string name="usd">= 0.0 USD</string>
+
+
+
 
 </resources>

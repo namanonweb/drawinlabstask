@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,64 +10,67 @@
     tools:context="com.naman.darwinlabstask.ReceiveActivity">
 
 
-
-
-
-    <include  layout="@layout/header"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/small_margin"
-        android:gravity="center_horizontal"
-        android:text="@string/qrcodetext"/>
-
-
-    <LinearLayout
-        android:layout_width="@dimen/receive_ll_dimension"
-        android:layout_height="@dimen/receive_ll_dimension"
-        android:background="#000000"
-        android:gravity="center"
-        android:layout_gravity="center">
-
-    <ImageView
-        android:layout_width="@dimen/receive_img_dimension"
-        android:layout_height="@dimen/receive_img_dimension"
-       android:padding="@dimen/small_padding"
-
-        android:background="#FFFFFF"
-        android:layout_gravity="center"
-        />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/small_margin"
-        android:gravity="center_horizontal"
-        android:text="@string/etheriumaddresstext"/>
-
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/very_small_margin"
-        android:weightSum="10">
-
-    <EditText
-        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@drawable/edittextrounded"
-        android:layout_weight="9"/>
+        android:orientation="vertical"
+        tools:context="com.naman.darwinlabstask.ReceiveActivity">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <include layout="@layout/header" />
+
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/copyicon"/>
+            android:layout_margin="@dimen/small_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/qrcodetext" />
+
+
+        <LinearLayout
+            android:layout_width="@dimen/receive_ll_dimension"
+            android:layout_height="@dimen/receive_ll_dimension"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/receive_img_dimension"
+                android:layout_height="@dimen/receive_img_dimension"
+                android:layout_gravity="center"
+
+                android:background="#FFFFFF"
+                android:padding="@dimen/small_padding" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/etheriumaddresstext" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/very_small_margin"
+            android:weightSum="10">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:background="@drawable/edittextrounded" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/copyicon" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>
