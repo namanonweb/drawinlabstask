@@ -56,7 +56,7 @@ public class Send2Activity extends AppCompatActivity implements View.OnClickList
         mForward.setOnClickListener(this);
 
 
-        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
 
 
         mButton1.setOnClickListener(this);
